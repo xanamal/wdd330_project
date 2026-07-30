@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Trip | National Park Adventure Planner</title>
+  <meta name="description" content="Build a simple National Park trip itinerary — add parks, set arrival and departure dates, add notes, and reorder your stops." />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/larger.css" />
+  <link rel="stylesheet" href="css/planner.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+          <path d="M3 20 L9 9 L12 14 L15 8 L21 20 Z" />
+        </svg>
+        <span>National Park Adventure Planner</span>
+      </a>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="parks.html">Explore Parks</a></li>
+          <li><a href="trip-planner.html">My Trip</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <h1>My Trip</h1>
+
+      <section aria-labelledby="favorites-heading" class="favorites-section">
+        <h2 id="favorites-heading">My Favorite Parks</h2>
+        <p id="favorites-status" aria-live="polite"></p>
+        <div id="favorites-grid" class="card-grid"></div>
+      </section>
+
+      <section aria-labelledby="trip-heading" class="trip-section">
+        <div class="trip-heading-row">
+          <h2 id="trip-heading">My Trip Itinerary</h2>
+          <button type="button" id="clear-trip-btn" class="btn btn-secondary" hidden>Clear Trip</button>
+        </div>
+        <p id="trip-summary" aria-live="polite"></p>
+        <div id="trip-list" class="trip-list"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> National Park Adventure Planner</p>
+      <p>Last updated: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/trip-planner.js"></script>
+</body>
+</html>

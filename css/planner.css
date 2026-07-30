@@ -1,0 +1,58 @@
+/* ==========================================================================
+   Trip Planner page — styles specific to trip-planner.html.
+   Loaded after base.css and larger.css.
+   ========================================================================== */
+
+.favorites-section,
+.trip-section {
+  padding-block: var(--space-lg);
+}
+
+.trip-heading-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.trip-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+.trip-item textarea {
+  resize: vertical;
+}
+
+.trip-dates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.trip-item-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.trip-item-actions .btn {
+  flex: 1 1 auto;
+}
+
+.trip-item-actions .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (min-width: 48rem) {
+  .trip-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+

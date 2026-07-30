@@ -1,0 +1,50 @@
+[
+  {
+    "parkCode": "yell",
+    "name": "Yellowstone National Park",
+    "state": "WY, MT, ID",
+    "description": "Home to Old Faithful and abundant wildlife, Yellowstone is famous for its geysers, hot springs, and dramatic canyons.",
+    "image": "images/yellowstone.svg",
+    "featured": true
+  },
+  {
+    "parkCode": "grca",
+    "name": "Grand Canyon National Park",
+    "state": "AZ",
+    "description": "One of the world's most spectacular landscapes, carved by the Colorado River over millions of years.",
+    "image": "images/grand-canyon.svg",
+    "featured": true
+  },
+  {
+    "parkCode": "yose",
+    "name": "Yosemite National Park",
+    "state": "CA",
+    "description": "Known for towering granite cliffs, waterfalls, and giant sequoia groves in California's Sierra Nevada.",
+    "image": "images/yosemite.svg",
+    "featured": true
+  },
+  {
+    "parkCode": "zion",
+    "name": "Zion National Park",
+    "state": "UT",
+    "description": "Steep red-rock canyon walls and the Virgin River make Zion a favorite for hikers and canyoneers.",
+    "image": "images/zion.svg",
+    "featured": true
+  },
+  {
+    "parkCode": "grsm",
+    "name": "Great Smoky Mountains National Park",
+    "state": "TN, NC",
+    "description": "The most visited national park in the U.S., known for misty mountain ridges and rich biodiversity.",
+    "image": "images/great-smoky-mountains.svg",
+    "featured": true
+  },
+  {
+    "parkCode": "acad",
+    "name": "Acadia National Park",
+    "state": "ME",
+    "description": "Rocky Atlantic coastline, woodlands, and granite peaks make Acadia a favorite New England getaway.",
+    "image": "images/acadia.svg",
+    "featured": true
+  }
+]

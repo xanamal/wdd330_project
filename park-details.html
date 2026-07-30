@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Park Details | National Park Adventure Planner</title>
+  <meta name="description" content="View detailed information for a U.S. National Park, including photos, activities, alerts, hours, fees, and directions." />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/larger.css" />
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+          <path d="M3 20 L9 9 L12 14 L15 8 L21 20 Z" />
+        </svg>
+        <span>National Park Adventure Planner</span>
+      </a>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="parks.html">Explore Parks</a></li>
+          <li><a href="trip-planner.html">My Trip</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container park-details-page">
+      <p id="park-details-status" aria-live="polite">Loading park details&hellip;</p>
+      <div id="park-details-content" hidden></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> National Park Adventure Planner</p>
+      <p>Last updated: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/park-details.js"></script>
+</body>
+</html>

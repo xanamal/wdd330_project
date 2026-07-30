@@ -1,0 +1,105 @@
+/* ==========================================================================
+   National Park Adventure Planner — Larger Screen Overrides
+   Loaded after base.css. Media queries only — no duplicated base rules.
+   ========================================================================== */
+
+/* Tablet and up */
+@media (min-width: 48rem) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .primary-nav {
+    display: block;
+    width: auto;
+    padding-bottom: 0;
+  }
+
+  .primary-nav.nav-open {
+    animation: none;
+  }
+
+  .primary-nav ul {
+    flex-direction: row;
+    gap: var(--space-sm);
+  }
+
+  .primary-nav a {
+    border-left: none;
+    border-bottom: 4px solid transparent;
+  }
+
+  .primary-nav a[aria-current="page"] {
+    border-left-color: transparent;
+    border-bottom-color: var(--color-rust-orange);
+  }
+
+  .header-inner {
+    flex-wrap: nowrap;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home-search-form {
+    flex-direction: row;
+  }
+
+  .overview-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .parks-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .filters-sidebar {
+    flex: 0 0 16rem;
+    position: sticky;
+    top: var(--space-lg);
+  }
+
+  .parks-results {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .results-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .view-toggle {
+    width: auto;
+  }
+
+  .view-toggle button {
+    flex: none;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .park-hero img {
+    max-height: 28rem;
+  }
+}
+
+/* Desktop and up */
+@media (min-width: 64rem) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .overview-list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" role="img" aria-label="Illustration of layered mountain ridges at sunset">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3B7EA1" />
+      <stop offset="60%" stop-color="#F3E9D2" />
+      <stop offset="100%" stop-color="#F3E9D2" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="600" fill="url(#sky)" />
+  <circle cx="1250" cy="220" r="90" fill="#B6532A" opacity="0.85" />
+  <path d="M0 420 L220 260 L400 400 L620 220 L860 400 L1080 240 L1300 400 L1600 300 L1600 600 L0 600 Z" fill="#2f5a41" opacity="0.55" />
+  <path d="M0 480 L260 360 L520 470 L780 340 L1040 470 L1300 360 L1600 460 L1600 600 L0 600 Z" fill="#244A35" />
+</svg>

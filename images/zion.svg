@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" role="img" aria-label="">
+  <rect width="400" height="250" fill="#F3E9D2" />
+  <path d="M0 250 L0 60 L70 250 Z" fill="#B6532A" />
+  <path d="M60 250 L120 20 L190 250 Z" fill="#c1662f" />
+  <path d="M180 250 L240 50 L300 250 Z" fill="#B6532A" opacity="0.85" />
+  <path d="M290 250 L340 80 L400 250 Z" fill="#c1662f" opacity="0.9" />
+  <rect x="0" y="230" width="400" height="20" fill="#3B7EA1" opacity="0.4" />
+</svg>

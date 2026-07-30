@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Parks | National Park Adventure Planner</title>
+  <meta name="description" content="Search and filter U.S. National Parks by name, state, or activity, and view park locations on an interactive map." />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/larger.css" />
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+          <path d="M3 20 L9 9 L12 14 L15 8 L21 20 Z" />
+        </svg>
+        <span>National Park Adventure Planner</span>
+      </a>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="parks.html">Explore Parks</a></li>
+          <li><a href="trip-planner.html">My Trip</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <h1>Explore Parks</h1>
+
+      <section class="search-section search-section--page" aria-labelledby="search-heading">
+        <h2 id="search-heading" class="visually-hidden">Search Parks</h2>
+        <form id="parks-search-form" class="home-search-form" role="search">
+          <label for="parks-search-input" class="visually-hidden">Search parks by name</label>
+          <input type="search" id="parks-search-input" name="search" placeholder="Search parks by name&hellip;" />
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </section>
+
+      <div class="parks-layout">
+        <aside class="filters-sidebar" aria-label="Filters">
+          <h2>Filters</h2>
+
+          <label for="state-filter">State</label>
+          <select id="state-filter" name="state">
+            <option value="">All States</option>
+          </select>
+
+          <label for="activity-filter">Activity</label>
+          <select id="activity-filter" name="activity">
+            <option value="">All Activities</option>
+          </select>
+
+          <label for="sort-filter">Sort By</label>
+          <select id="sort-filter" name="sort">
+            <option value="az">A - Z</option>
+            <option value="za">Z - A</option>
+          </select>
+
+          <button type="button" id="clear-filters-btn" class="btn btn-secondary">Clear Filters</button>
+        </aside>
+
+        <section class="parks-results" aria-labelledby="results-heading">
+          <div class="results-header">
+            <h2 id="results-heading">Parks</h2>
+            <div class="view-toggle" role="group" aria-label="Results view">
+              <button type="button" id="grid-view-btn" aria-pressed="true">Grid View</button>
+              <button type="button" id="map-view-btn" aria-pressed="false">Map View</button>
+            </div>
+          </div>
+
+          <p id="parks-status" aria-live="polite">Loading parks&hellip;</p>
+
+          <div id="parks-grid" class="card-grid"></div>
+
+          <div id="parks-map" class="map-container" hidden></div>
+
+          <button type="button" id="load-more-btn" class="btn btn-secondary" hidden>Load More Parks</button>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> National Park Adventure Planner</p>
+      <p>Last updated: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/parks.js"></script>
+</body>
+</html>

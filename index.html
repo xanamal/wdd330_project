@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>National Park Adventure Planner | Home</title>
+  <meta name="description" content="Discover, explore, and plan trips to U.S. National Parks in one place — search parks, view alerts, explore maps, save favorites, and build a trip." />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/larger.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+          <path d="M3 20 L9 9 L12 14 L15 8 L21 20 Z" />
+        </svg>
+        <span>National Park Adventure Planner</span>
+      </a>
+
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="parks.html">Explore Parks</a></li>
+          <li><a href="trip-planner.html">My Trip</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-label="Introduction">
+      <div class="container hero-inner">
+        <h1>Plan Your Next National Park Adventure</h1>
+        <p>Search parks, check alerts, explore maps, save favorites, and build a trip itinerary &mdash; all in one place.</p>
+        <a class="btn btn-primary" href="parks.html">Explore Parks</a>
+      </div>
+    </section>
+
+    <section class="search-section" aria-labelledby="search-heading">
+      <div class="container">
+        <h2 id="search-heading" class="visually-hidden">Search Parks</h2>
+        <form id="home-search-form" class="home-search-form" role="search">
+          <label for="home-search-input" class="visually-hidden">Search parks by name or state</label>
+          <input
+            type="search"
+            id="home-search-input"
+            name="search"
+            placeholder="Search parks or states&hellip;"
+          />
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="container featured-parks" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured Parks</h2>
+      <div id="featured-parks-grid" class="card-grid" aria-live="polite">
+        <p>Loading featured parks&hellip;</p>
+      </div>
+    </section>
+
+    <section class="container feature-overview" aria-labelledby="overview-heading">
+      <h2 id="overview-heading">Everything You Need in One Place</h2>
+      <ul class="overview-list">
+        <li>
+          <h3>Search Parks</h3>
+          <p>Find parks by name, state, or activity.</p>
+        </li>
+        <li>
+          <h3>View Alerts</h3>
+          <p>Stay informed with current park alerts and closures.</p>
+        </li>
+        <li>
+          <h3>Explore Maps</h3>
+          <p>See park locations and directions on an interactive map.</p>
+        </li>
+        <li>
+          <h3>Save Favorites</h3>
+          <p>Keep a list of parks you want to visit.</p>
+        </li>
+        <li>
+          <h3>Build a Trip</h3>
+          <p>Plan dates, notes, and stops for your next adventure.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container alerts-preview" aria-labelledby="alerts-heading">
+      <h2 id="alerts-heading">Current Park Alerts</h2>
+      <div id="home-alerts-list" aria-live="polite">
+        <p>Alerts will appear here once connected to the National Park Service API.</p>
+      </div>
+      <a class="btn btn-secondary" href="parks.html">Explore Parks</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> National Park Adventure Planner</p>
+      <p>Last updated: <span id="last-modified"></span></p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
