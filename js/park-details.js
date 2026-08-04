@@ -6,7 +6,7 @@
 import { fetchParkByCode, fetchParkAlerts } from "./api.js";
 import { renderSingleParkMap } from "./map.js";
 import { refreshFavoriteButtonStates } from "./favorites.js";
-import { addParkToTrip, isInTrip } from "../../../../Library/Mobile Documents/.Trash/js/trip-planner.js";
+import { addParkToTrip, isInTrip } from "./trip-planner.js";
 
 function escapeAttr(value) {
   return String(value ?? "")

@@ -2,7 +2,7 @@
 // from DOM rendering. Every function returns the parsed JSON response
 // (or throws), so calling code handles its own try/catch and messaging.
 
-import { NPS_API_KEY } from "../../../../Library/Mobile Documents/.Trash/js/config.js";
+import { NPS_API_KEY } from "./config.js";
 
 const NPS_BASE_URL = "https://developer.nps.gov/api/v1";
 
